@@ -1,6 +1,6 @@
 # Django modules
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 # Project modules
 from apps.tasks.views import hello_view
@@ -8,4 +8,5 @@ from apps.tasks.views import hello_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(route="hello/", view=hello_view, name="hello-view"),
+    path('api/', include('users.urls')),
 ]
