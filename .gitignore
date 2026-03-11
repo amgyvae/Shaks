@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -180,3 +181,26 @@ media/
 /!*/static/
 
 local.sh
+=======
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Django
+db.sqlite3
+staticfiles/
+
+# Environment
+settings/.env
+
+# Logs
+logs/
+
+# Mac
+.DS_Store
+>>>>>>> 8b8d9f28565ec785158feefecda8de01869b8e04
