@@ -5,7 +5,7 @@ DEBUG = False
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "shaks",
+        "NAME": "lms",
         "USER": "postgres",
         "PASSWORD": "password",
         "HOST": "localhost",

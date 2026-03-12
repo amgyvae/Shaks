@@ -1,16 +1,10 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from django.contrib.auth import get_user_model
+from .models import User, TeacherProfile
 
-# Register your models here.
-User = get_user_model()
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
-    fieldsets = UserAdmin.fieldsets + (
-        ("Role", {"fields": ("role",)}),
-    )
-    
-    add_fieldsets = UserAdmin.add_fieldsets + (
-        ("Role", {"fields": ("role",)}),
-    )
+    pass
+
+admin.site.register(TeacherProfile)

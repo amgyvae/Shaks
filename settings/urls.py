@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-# Django modules
-from django.contrib import admin
-from django.urls import path, include
-
-# Project modules
-from apps.tasks.views import hello_view
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path(route="hello/", view=hello_view, name="hello-view"),
-    path('api/', include('users.urls')),
-]
-=======
 """
 URL configuration for settings project.
 
@@ -30,23 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from rest_framework_simplejwt.views import (TokenRefreshView, TokenObtainPairView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
-    #AUTH/JWT
     path("api/auth/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/auth/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
-    
-    #Users API
     path("api/users/", include("apps.users.urls")),
-    
-    #Course API
-    
-    path("api/courses/", include("apps.courses.urls")),
-    path("api/quizzes/", include("apps.courses.quiz_urls")),
-    path("api/lessons/", include("apps.courses.urls")),
 ]
->>>>>>> 8b8d9f28565ec785158feefecda8de01869b8e04
