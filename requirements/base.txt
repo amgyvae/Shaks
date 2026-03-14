@@ -1,4 +1,0 @@
-Django>=5.0
-djangorestframework
-python-decouple
-djangorestframework-simplejwt
