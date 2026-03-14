@@ -26,15 +26,17 @@ class MeSerializer(serializers.ModelSerializer):
         fields = ("id", "username", "email", "role")
 
 class TeacherProfileSerializer(serializers.ModelSerializer):
-    username = serializers.SerializerMethodField(source="get_username")
-    email = serializers.SerializerMethodField(source="get_email")
+    username = serializers.CharField(source='user.username', read_only=True)
     class Meta:
         model = TeacherProfile
         fields = [
-            "id",
-            "username",
-            "email",
-            "avatar",
-            "bio",
-            "specialization",
+            'id',
+            'user',
+            'username',
+            'avatar',
+            'experience_years',
+            'bio',
+            'specialization',
+            'created_at',
         ]
+        read_only_fields = ['id', 'created_at', 'username']
