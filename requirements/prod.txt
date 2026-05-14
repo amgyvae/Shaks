@@ -1,3 +1,8 @@
 -r base.txt
+<<<<<<< HEAD
 gunicorn
 psycopg2-binary
+=======
+
+gunicorn==22.0.0
+>>>>>>> final changes with requirements
