@@ -1,169 +1,184 @@
 # SHAKS LMS
 
-SHAKS LMS is a learning management system designed to manage courses, lessons, assignments, and student submissions.  
-The platform allows teachers to create courses and lessons, while students can enroll in courses, complete assignments, and submit their work for review.
-
-This project is developed as a university team project using Django REST Framework for the backend. The frontend will be developed using React.
-
----
-
-## Features
-
-### Authentication
-- User registration and login
-- Role-based access (Student / Teacher)
-- JWT authentication
-
-### Student Features
-- View profile
-- Enroll in courses
-- View course modules and lessons
-- Submit assignments
-- Track submissions
-
-### Teacher Features
-- Manage courses
-- Create modules and lessons
-- Review student submissions
-- Provide feedback
-
-### Course Structure
-Each course contains:
-- Modules
-- Lessons
-- Quizzes
-- Assignments
+> Full-stack Learning Management System — Django REST Framework + React + TypeScript.
+> University team project · KBTU 2026 · Advanced Django Backend · SHAKS
 
 ---
 
 ## Tech Stack
 
-Backend:
-- Python
-- Django
-- Django REST Framework
+| Layer | Technologies |
+|-------|-------------|
+| Backend | Python 3.11, Django 4.x, Django REST Framework |
+| Auth | JWT (SimpleJWT) |
+| Database | PostgreSQL, SQLite (dev) |
+| Async | Celery + Redis |
+| Real-time | Django Channels (WebSockets) |
+| Frontend | React, TypeScript, Vite, TailwindCSS |
+| DevOps | Docker, Docker Compose, Nginx |
+| Docs | Swagger UI, ReDoc, OpenAPI |
 
-Frontend:
-- React (planned)
+---
 
-Database:
-- PostgreSQL / SQLite (development)
+## Features
 
-Authentication:
-- JWT (SimpleJWT)
+### Authentication & Roles
+- JWT authentication (access + refresh tokens)
+- Three roles: **Student**, **Teacher**, **Admin**
+- Registration, login, password management
+
+### Student
+- Browse and enroll in courses
+- View modules and lessons
+- Submit assignments
+- Take quizzes and track results
+- Social feed and notifications
+
+### Teacher
+- Create and manage courses, modules, lessons
+- Publish assignments and quizzes
+- Review and grade student submissions
+- Schedule meetings
+
+### Platform
+- Real-time chat (WebSockets)
+- Email notifications (async via Celery)
+- Multilingual support (locale/)
+- REST API with full OpenAPI documentation
+- Dockerized deployment with Nginx
 
 ---
 
 ## Project Structure
 
-
+```
 Shaks/
 │
-├── apps/
-│ ├── users
-│ ├── courses
-│ └── submissions
+├── shaks_backend/
+│   ├── apps/
+│   │   ├── accounts/        # Users, roles, JWT auth
+│   │   ├── courses/         # Courses, modules, lessons
+│   │   ├── assignments/     # Assignments & submissions
+│   │   ├── quizzes/         # Quizzes & attempts
+│   │   ├── chat/            # Real-time messaging
+│   │   ├── social/          # Social feed
+│   │   ├── meetings/        # Scheduled meetings
+│   │   ├── notifications/   # Push & email notifications
+│   │   └── core/            # Shared utilities & base classes
+│   ├── settings/            # Dev / prod / base configs
+│   ├── requirements/        # Pinned dependencies
+│   ├── docs/                # API docs & architecture
+│   ├── nginx/               # Nginx config
+│   ├── scripts/             # Utility scripts
+│   ├── locale/              # i18n translations
+│   ├── templates/           # Email templates
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── manage.py
 │
-├── settings/
-│ ├── base.py
-│ ├── dev.py
-│ └── prod.py
-│
-├── requirements
-├── logs
-├── manage.py
-└── README.md
-
+└── shaks_frontend/
+    ├── src/
+    │   ├── api/             # Axios clients & endpoints
+    │   ├── assets/          # Static assets
+    │   ├── components/      # Reusable UI components
+    │   ├── context/         # React context providers
+    │   ├── hooks/           # Custom React hooks
+    │   └── pages/
+    │       ├── admin/       # Admin dashboard
+    │       ├── auth/        # Login, register
+    │       ├── student/     # Student views
+    │       ├── teacher/     # Teacher views
+    │       └── LandingPage.tsx
+    ├── public/
+    ├── index.html
+    └── vite.config.ts
+```
 
 ---
 
-## Installation
+## Quick Start
 
-Clone the repository
+### Run with Docker (recommended)
 
-
+```bash
 git clone https://github.com/amgyvae/Shaks.git
-
 cd Shaks
 
+# Configure environment
+cp shaks_backend/.env.example shaks_backend/.env
 
-Create virtual environment
+# Start all services
+docker-compose up --build
+```
 
+### Run manually
 
+**Backend:**
+```bash
+cd shaks_backend
 python -m venv venv
-source venv/bin/activate
-
-
-Install dependencies
-
-
-pip install -r requirements.txt
-
-
-Apply migrations
-
-
+source venv/bin/activate        # Windows: venv\Scripts\activate
+pip install -r requirements/local.txt
 python manage.py migrate
-
-
-Run the server
-
-
+python manage.py createsuperuser
 python manage.py runserver
+```
 
-
----
-
-## API Endpoints
-
-Authentication
-
-
-POST /api/auth/login
-POST /api/auth/register
-
-
-Courses
-
-
-GET /api/courses
-GET /api/courses/{id}
-
-
-Lessons
-
-
-GET /api/lessons
-GET /api/lessons/{id}
-
-
-Submissions
-
-
-POST /api/submissions
-GET /api/submissions
-
+**Frontend:**
+```bash
+cd shaks_frontend
+npm install
+npm run dev
+```
 
 ---
 
-## Team Members
+## Environment Variables
 
-- Nuray Aitbazar
-- Margulan Sharipzhan
-- Askarova Akbota
+Create `shaks_backend/.env`:
+
+```env
+SECRET_KEY=your-secret-key
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+DATABASE_URL=postgres://user:password@localhost:5432/shaks_db
+REDIS_URL=redis://localhost:6379/0
+
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_HOST_USER=your@email.com
+EMAIL_HOST_PASSWORD=your-password
+```
 
 ---
 
-## Future Improvements
+## API Documentation
 
-- React frontend
-- Course progress tracking
-- Notifications
-- Quiz system
-- File submissions
+Start the backend and open:
+
+| URL | Description |
+|-----|-------------|
+| `/api/docs/` | Swagger UI |
+| `/api/redoc/` | ReDoc |
+| `/api/schema/` | OpenAPI JSON/YAML |
+
+---
+
+## Team
+
+All team members contributed as **Backend Developers**.
+
+| GitHub | Name |
+|--------|------|
+| [@amgyvae](https://github.com/amgyvae) | Margulan Sharipzhan |
+| [@Nuraiikkka](https://github.com/Nuraiikkka) | Nurai Aitbazar |
+| [@AskarovaAkbota](https://github.com/AskarovaAkbota) | Akbota Askarova |
 
 ---
 
 ## License
 
-Educational project developed for university coursework.
+© SHAKS · KBTU 2026 · Advanced Django Backend Course
+
+This project was developed as a university course project at Kazakh-British Technical University.
