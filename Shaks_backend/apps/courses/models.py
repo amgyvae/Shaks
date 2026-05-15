@@ -1,188 +1,121 @@
-from django.db import models
 from django.conf import settings
-import uuid
+from django.db import models
+from django.utils.translation import gettext_lazy as _
 
-# Create your models here.
-class Course(models.Model):
-    title = models.CharField(max_length=255)
-    description = models.TextField()
-    teacher = models.ForeignKey(settings.AUTH_USER_MODEL, related_name=("courses"), on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
-    def __str__(self):
-        return self.title
 
-class Enrollment(models.Model):
-    student = models.ForeignKey(
+class Grade(models.Model):
+    name = models.CharField(_('name'), max_length=50, unique=True, help_text=_('Grade name, e.g. "Grade 10".'))
+
+    class Meta:
+        verbose_name = _('grade')
+        verbose_name_plural = _('grades')
+        ordering = ['name']
+
+    def __str__(self) -> str:
+        return self.name
+
+
+class Subject(models.Model):
+    name = models.CharField(_('name'), max_length=100, unique=True, db_index=True)
+    description = models.TextField(_('description'), blank=True)
+    created_by = models.ForeignKey(
         settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="enrollments"
+        on_delete=models.SET_NULL,
+        null=True,
+        verbose_name=_('created by'),
+        related_name='created_subjects',
     )
-    course = models.ForeignKey(
-        Course,
-        on_delete=models.CASCADE,
-        related_name="enrollments"
-    )
-    enrolled_at = models.DateTimeField(auto_now_add=True)
-    
-    def __str__(self):
-        return f"{self.student} -> {self.course}"
-    
+
+    class Meta:
+        verbose_name = _('subject')
+        verbose_name_plural = _('subjects')
+        ordering = ['name']
+
+    def __str__(self) -> str:
+        return self.name
+
+
 class Module(models.Model):
-    course = models.ForeignKey(
-        Course,
-        on_delete=models.CASCADE,
-        related_name="modules"
+    title = models.CharField(_('title'), max_length=200, db_index=True)
+    subject = models.ForeignKey(
+        Subject, on_delete=models.CASCADE, related_name='modules', verbose_name=_('subject'),
     )
-    title = models.CharField(max_length=255)
-    order = models.IntegerField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    
+    grade = models.ForeignKey(
+        Grade, on_delete=models.CASCADE, related_name='modules', verbose_name=_('grade'),
+    )
+    order = models.PositiveIntegerField(_('order'), default=0, help_text=_('Display order within the subject.'))
+
     class Meta:
-        ordering = ["order"]
-    
-    def __str__(self):
-        return f"{self.course.title} - {self.title}"
-    
-class Lesson(models.Model):
+        verbose_name = _('module')
+        verbose_name_plural = _('modules')
+        ordering = ['order']
+        indexes = [models.Index(fields=['subject', 'grade'], name='module_subject_grade_idx')]
+
+    def __str__(self) -> str:
+        return self.title
+
+
+class Topic(models.Model):
+    title = models.CharField(_('title'), max_length=200, db_index=True)
     module = models.ForeignKey(
-        Module,
-        on_delete=models.CASCADE,
-        related_name="lessons"
+        Module, on_delete=models.CASCADE, related_name='topics', verbose_name=_('module'),
     )
-    title = models.CharField(max_length=255)
-    video_url = models.URLField()
-    order = models.IntegerField()
-    content = models.TextField(blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
+    video_url = models.URLField(_('video URL'), blank=True, help_text=_('External video URL (YouTube, Vimeo, etc.)'))
+    video_file = models.FileField(
+        _('video file'), upload_to='topic_videos/', blank=True, null=True,
+        help_text=_('Uploaded video file (optional alternative to URL).'),
+    )
+    explanation = models.TextField(_('explanation'), blank=True)
+    example = models.TextField(_('example'), blank=True)
+    order = models.PositiveIntegerField(_('order'), default=0)
+
     class Meta:
-        ordering = ["order"]
-    
-    def __str__(self):
+        verbose_name = _('topic')
+        verbose_name_plural = _('topics')
+        ordering = ['order']
+        indexes = [models.Index(fields=['module', 'order'], name='topic_module_order_idx')]
+
+    def __str__(self) -> str:
         return self.title
-    
-class Quiz(models.Model):
-    lesson = models.ForeignKey(
-        Lesson,
+
+
+class VideoWatch(models.Model):
+    student = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
-        related_name="quizzes"
+        related_name='video_watches',
+        verbose_name=_('student'),
     )
-    title = models.CharField(max_length=50)
-    
-    def __str__(self):
+    topic = models.ForeignKey(
+        Topic, on_delete=models.CASCADE, related_name='watches', verbose_name=_('topic'),
+    )
+    watched_at = models.DateTimeField(_('watched at'), auto_now_add=True)
+
+    class Meta:
+        verbose_name = _('video watch')
+        verbose_name_plural = _('video watches')
+        unique_together = ('student', 'topic')
+        ordering = ['-watched_at']
+
+    def __str__(self) -> str:
+        return f'{self.student} watched {self.topic}'
+
+
+class Announcement(models.Model):
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        verbose_name=_('author'),
+        related_name='announcements',
+    )
+    title = models.CharField(_('title'), max_length=200)
+    body = models.TextField(_('body'))
+    created_at = models.DateTimeField(_('created at'), auto_now_add=True)
+
+    class Meta:
+        verbose_name = _('announcement')
+        verbose_name_plural = _('announcements')
+        ordering = ['-created_at']
+
+    def __str__(self) -> str:
         return self.title
-    
-class Question(models.Model):
-    quiz = models.ForeignKey(
-        Quiz,
-        on_delete=models.CASCADE,
-        related_name="questions"
-    )
-    text = models.TextField()
-    
-    def __str__(self):
-        return self.text
-    
-class Answer(models.Model):
-    question = models.ForeignKey(
-        Question,
-        on_delete=models.CASCADE,
-        related_name="answers"
-    )
-    text = models.CharField(max_length=50)
-    is_correct = models.BooleanField(default=False)
-    
-    def __str__(self):
-        return self.text
-    
-class LessonProgress(models.Model):
-    student = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="students"
-    )
-    lesson = models.ForeignKey(
-        Lesson,
-        on_delete=models.CASCADE,
-        related_name="progress"
-    )
-    completed = models.BooleanField(default=True)
-    completed_at = models.DateTimeField(null=True, blank=True)
-    
-    def __str__(self):
-        return f"{self.student} - {self.lesson}"
-    
-class QuizAttempt(models.Model):
-    student = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="quiz_attempts"
-    )
-    quiz = models.ForeignKey(
-        Quiz,
-        on_delete=models.CASCADE,
-        related_name="attempts"
-    )
-    score = models.IntegerField(default=0)
-    completed = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
-    def __str__(self):
-        return f"{self.student} - {self.quiz}"
-    
-class StudentAnswer(models.Model):
-    attempt = models.ForeignKey(
-        QuizAttempt,
-        on_delete=models.CASCADE,
-        related_name="answers"
-    )
-
-    question = models.ForeignKey(
-        Question,
-        on_delete=models.CASCADE
-    )
-
-    selected_answer = models.ForeignKey(
-        Answer,
-        on_delete=models.CASCADE
-    )
-
-    is_correct = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f"{self.question}"
-    
-class Submission(models.Model):
-    student = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE
-    )
-    lesson = models.ForeignKey(
-        Lesson,
-        on_delete=models.CASCADE
-    )
-    image = models.ImageField(upload_to="submissions/")
-    created_at = models.DateTimeField(auto_now_add=True)
-    grade = models.IntegerField(null=True, blank=True)
-    feedback = models.TextField(blank=True)
-    checked = models.BooleanField(default=False)
-    
-    def __str__(self):
-        return f"{self.student} -> {self.lesson}"
-    
-class Certificate(models.Model):
-    student = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE
-    )
-    course = models.ForeignKey(
-        Course,
-        on_delete=models.CASCADE
-    )
-
-    certificate_id = models.UUIDField(default=uuid.uuid4, editable=False)
-    issued_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f"{self.student} - {self.course}"
