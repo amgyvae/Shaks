@@ -1,0 +1,17 @@
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /favicon.ico
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /apple-touch-icon-precomposed.png
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /apple-touch-icon.png
+2026-05-04 09:39:01 [WARNING] django.request log: Not Found: /
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/courses/subjects/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/assignments/submissions/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/courses/modules/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/auth/users/
+2026-05-04 09:42:50 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 09:43:42 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 09:44:18 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-04 09:44:39 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /apple-touch-icon-precomposed.png
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /apple-touch-icon.png
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /favicon.ico
