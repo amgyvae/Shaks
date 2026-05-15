@@ -1,0 +1,51 @@
+# Russian translations for Shaks LMS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid "Phone number is required."
+msgstr "Номер телефона обязателен."
+
+msgid "Phone number must be entered in format: +999999999. Up to 15 digits allowed."
+msgstr "Номер телефона должен быть в формате: +999999999. До 15 цифр."
+
+msgid "Either phone number or email is required."
+msgstr "Необходимо указать номер телефона или электронную почту."
+
+msgid "No account found with this phone number or email."
+msgstr "Аккаунт с таким номером телефона или email не найден."
+
+msgid "Account already activated. Please login."
+msgstr "Аккаунт уже активирован. Пожалуйста, войдите."
+
+msgid "Account activated."
+msgstr "Аккаунт активирован."
+
+msgid "Invalid credentials."
+msgstr "Неверные учётные данные."
+
+msgid "Account not activated. Please activate first."
+msgstr "Аккаунт не активирован. Пожалуйста, активируйте сначала."
+
+msgid "Language updated."
+msgstr "Язык обновлён."
+
+msgid "Timezone updated."
+msgstr "Часовой пояс обновлён."
+
+msgid "Student not found."
+msgstr "Студент не найден."
+
+msgid "Grade not found."
+msgstr "Класс не найден."
+
+msgid "Topic not found."
+msgstr "Тема не найдена."
+
+msgid "Too many requests. Try again later."
+msgstr "Слишком много запросов. Попробуйте позже."
+
+msgid "Welcome to Shaks LMS!"
+msgstr "Добро пожаловать в Shaks LMS!"

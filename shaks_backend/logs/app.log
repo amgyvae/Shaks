@@ -1,0 +1,428 @@
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/language/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/language/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/language/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:49 [ERROR] django.request log: Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/login/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/me/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/me/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/me/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/timezone/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/timezone/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/auth/timezone/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/read/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/read/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/read/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/read/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/count/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/count/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/notifications/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/999999/like/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/1/like/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/1/like/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/social/posts/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/grades/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/grades/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/grades/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/topics/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/topics/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-02 22:58:50 [ERROR] django.request log: Internal Server Error: /api/courses/topics/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nuraiaitbazar/Desktop/shaks/backend/apps/core/middleware.py", line 46, in __call__
+    tz.activate(tz.utc)
+                ^^^^^^
+AttributeError: module 'django.utils.timezone' has no attribute 'utc'
+2026-05-03 06:03:16 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:03:16 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:03:16 [WARNING] django.request log: Bad Request: /api/auth/language/
+2026-05-03 06:03:16 [WARNING] django.request log: Unauthorized: /api/auth/language/
+2026-05-03 06:03:17 [WARNING] django.request log: Forbidden: /api/auth/login/
+2026-05-03 06:03:18 [WARNING] apps.accounts views: Failed login attempt for: +77002222222
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/auth/me/
+2026-05-03 06:03:18 [WARNING] django.request log: Bad Request: /api/auth/me/
+2026-05-03 06:03:18 [WARNING] django.request log: Bad Request: /api/auth/timezone/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/auth/timezone/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/notifications/read/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/notifications/count/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/notifications/
+2026-05-03 06:03:18 [WARNING] django.request log: Not Found: /api/social/posts/999999/like/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/social/posts/1/like/
+2026-05-03 06:03:18 [WARNING] django.request log: Bad Request: /api/social/posts/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/social/posts/
+2026-05-03 06:03:18 [WARNING] django.request log: Forbidden: /api/courses/grades/
+2026-05-03 06:03:18 [WARNING] django.request log: Unauthorized: /api/courses/grades/
+2026-05-03 06:03:18 [WARNING] django.request log: Forbidden: /api/courses/topics/
+2026-05-03 06:24:13 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:24:13 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:24:13 [WARNING] django.request log: Bad Request: /api/auth/language/
+2026-05-03 06:24:13 [WARNING] django.request log: Unauthorized: /api/auth/language/
+2026-05-03 06:24:14 [WARNING] django.request log: Forbidden: /api/auth/login/
+2026-05-03 06:24:15 [WARNING] apps.accounts views: Failed login attempt for: +77002222222
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/auth/me/
+2026-05-03 06:24:15 [WARNING] django.request log: Bad Request: /api/auth/me/
+2026-05-03 06:24:15 [WARNING] django.request log: Bad Request: /api/auth/timezone/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/auth/timezone/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/notifications/read/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/notifications/count/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/notifications/
+2026-05-03 06:24:15 [WARNING] django.request log: Not Found: /api/social/posts/999999/like/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/social/posts/1/like/
+2026-05-03 06:24:15 [WARNING] django.request log: Bad Request: /api/social/posts/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/social/posts/
+2026-05-03 06:24:15 [WARNING] django.request log: Forbidden: /api/courses/grades/
+2026-05-03 06:24:15 [WARNING] django.request log: Unauthorized: /api/courses/grades/
+2026-05-03 06:24:15 [WARNING] django.request log: Forbidden: /api/courses/topics/
+2026-05-03 06:33:38 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:33:38 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-03 06:33:38 [WARNING] django.request log: Bad Request: /api/auth/language/
+2026-05-03 06:33:38 [WARNING] django.request log: Unauthorized: /api/auth/language/
+2026-05-03 06:33:39 [WARNING] django.request log: Forbidden: /api/auth/login/
+2026-05-03 06:33:40 [WARNING] apps.accounts views: Failed login attempt for: +77002222222
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/auth/me/
+2026-05-03 06:33:40 [WARNING] django.request log: Bad Request: /api/auth/me/
+2026-05-03 06:33:40 [WARNING] django.request log: Bad Request: /api/auth/timezone/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/auth/timezone/
+2026-05-03 06:33:40 [WARNING] django.request log: Forbidden: /api/courses/grades/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/courses/grades/
+2026-05-03 06:33:40 [WARNING] django.request log: Forbidden: /api/courses/topics/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/notifications/read/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/notifications/count/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/notifications/
+2026-05-03 06:33:40 [WARNING] django.request log: Not Found: /api/social/posts/999999/like/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/social/posts/1/like/
+2026-05-03 06:33:40 [WARNING] django.request log: Bad Request: /api/social/posts/
+2026-05-03 06:33:40 [WARNING] django.request log: Unauthorized: /api/social/posts/
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /favicon.ico
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /apple-touch-icon-precomposed.png
+2026-05-04 09:38:55 [WARNING] django.request log: Not Found: /apple-touch-icon.png
+2026-05-04 09:39:01 [WARNING] django.request log: Not Found: /
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/courses/subjects/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/assignments/submissions/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/courses/modules/
+2026-05-04 09:42:46 [WARNING] django.request log: Unauthorized: /api/auth/users/
+2026-05-04 09:42:50 [WARNING] apps.accounts views: Failed login attempt for: assem.kanatova@gmail.com
+2026-05-04 09:42:50 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 09:43:42 [WARNING] apps.accounts views: Failed login attempt for: +72222222221
+2026-05-04 09:43:42 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 09:44:18 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-04 09:44:39 [WARNING] apps.accounts views: Failed login attempt for: +72222222221
+2026-05-04 09:44:39 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 10:33:39 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-04 10:33:39 [WARNING] django.request log: Bad Request: /api/auth/register/
+2026-05-04 10:33:39 [WARNING] django.request log: Bad Request: /api/auth/language/
+2026-05-04 10:33:39 [WARNING] django.request log: Unauthorized: /api/auth/language/
+2026-05-04 10:33:40 [WARNING] django.request log: Forbidden: /api/auth/login/
+2026-05-04 10:33:40 [WARNING] apps.accounts views: Failed login attempt for: +77002222222
+2026-05-04 10:33:40 [WARNING] django.request log: Unauthorized: /api/auth/login/
+2026-05-04 10:33:40 [WARNING] django.request log: Unauthorized: /api/auth/me/
+2026-05-04 10:33:40 [WARNING] django.request log: Bad Request: /api/auth/me/
+2026-05-04 10:33:40 [WARNING] django.request log: Bad Request: /api/auth/timezone/
+2026-05-04 10:33:40 [WARNING] django.request log: Unauthorized: /api/auth/timezone/
+2026-05-04 10:33:41 [WARNING] django.request log: Forbidden: /api/courses/grades/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/courses/grades/
+2026-05-04 10:33:41 [WARNING] django.request log: Forbidden: /api/courses/topics/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/notifications/read/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/notifications/count/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/notifications/
+2026-05-04 10:33:41 [WARNING] django.request log: Not Found: /api/social/posts/999999/like/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/social/posts/1/like/
+2026-05-04 10:33:41 [WARNING] django.request log: Bad Request: /api/social/posts/
+2026-05-04 10:33:41 [WARNING] django.request log: Unauthorized: /api/social/posts/
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /apple-touch-icon-precomposed.png
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /apple-touch-icon.png
+2026-05-04 12:13:16 [WARNING] django.request log: Not Found: /favicon.ico

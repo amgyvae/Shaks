@@ -1,0 +1,51 @@
+# Kazakh translations for Shaks LMS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: kk\n"
+
+msgid "Phone number is required."
+msgstr "Телефон нөмірі қажет."
+
+msgid "Phone number must be entered in format: +999999999. Up to 15 digits allowed."
+msgstr "Телефон нөмірі +999999999 форматында болуы керек. 15 цифрға дейін."
+
+msgid "Either phone number or email is required."
+msgstr "Телефон нөмірі немесе электрондық пошта қажет."
+
+msgid "No account found with this phone number or email."
+msgstr "Бұл телефон нөмірі немесе email-мен аккаунт табылмады."
+
+msgid "Account already activated. Please login."
+msgstr "Аккаунт бұрыннан белсендірілген. Жүйеге кіріңіз."
+
+msgid "Account activated."
+msgstr "Аккаунт белсендірілді."
+
+msgid "Invalid credentials."
+msgstr "Жарамсыз тіркелгі деректері."
+
+msgid "Account not activated. Please activate first."
+msgstr "Аккаунт белсендірілмеген. Алдымен белсендіріңіз."
+
+msgid "Language updated."
+msgstr "Тіл жаңартылды."
+
+msgid "Timezone updated."
+msgstr "Уақыт белдеуі жаңартылды."
+
+msgid "Student not found."
+msgstr "Оқушы табылмады."
+
+msgid "Grade not found."
+msgstr "Сынып табылмады."
+
+msgid "Topic not found."
+msgstr "Тақырып табылмады."
+
+msgid "Too many requests. Try again later."
+msgstr "Тым көп сұраныс. Кейінірек қайталаңыз."
+
+msgid "Welcome to Shaks LMS!"
+msgstr "Shaks LMS-ке қош келдіңіз!"

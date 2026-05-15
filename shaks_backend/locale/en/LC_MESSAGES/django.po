@@ -1,0 +1,51 @@
+# English translations for Shaks LMS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "Phone number is required."
+msgstr "Phone number is required."
+
+msgid "Phone number must be entered in format: +999999999. Up to 15 digits allowed."
+msgstr "Phone number must be entered in format: +999999999. Up to 15 digits allowed."
+
+msgid "Either phone number or email is required."
+msgstr "Either phone number or email is required."
+
+msgid "No account found with this phone number or email."
+msgstr "No account found with this phone number or email."
+
+msgid "Account already activated. Please login."
+msgstr "Account already activated. Please login."
+
+msgid "Account activated."
+msgstr "Account activated."
+
+msgid "Invalid credentials."
+msgstr "Invalid credentials."
+
+msgid "Account not activated. Please activate first."
+msgstr "Account not activated. Please activate first."
+
+msgid "Language updated."
+msgstr "Language updated."
+
+msgid "Timezone updated."
+msgstr "Timezone updated."
+
+msgid "Student not found."
+msgstr "Student not found."
+
+msgid "Grade not found."
+msgstr "Grade not found."
+
+msgid "Topic not found."
+msgstr "Topic not found."
+
+msgid "Too many requests. Try again later."
+msgstr "Too many requests. Try again later."
+
+msgid "Welcome to Shaks LMS!"
+msgstr "Welcome to Shaks LMS!"
